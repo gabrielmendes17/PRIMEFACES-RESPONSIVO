@@ -18,8 +18,6 @@ public class CadastroMembroBean implements Serializable{
 	
 	@Inject
 	private Membro membro;
-	@Inject
-	private Estados estados;
 	
 	
 	
@@ -34,9 +32,7 @@ public class CadastroMembroBean implements Serializable{
 	public Estados[] getEstados() {
 		return Estados.values();
 	}
-	public void setEstados(Estados estados) {
-		this.estados = estados;
-	}
+	
 	
 	
 	

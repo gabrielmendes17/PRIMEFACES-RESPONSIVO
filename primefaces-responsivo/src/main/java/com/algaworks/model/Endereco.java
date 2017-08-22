@@ -1,8 +1,9 @@
 package com.algaworks.model;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
+
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 
 public class Endereco implements Serializable {
 
@@ -13,6 +14,7 @@ public class Endereco implements Serializable {
 	private String numero;
 	private String bairro;
 	private String cidade;
+	@Enumerated(EnumType.STRING)
 	private Estados estados;
 
 	public Endereco() {

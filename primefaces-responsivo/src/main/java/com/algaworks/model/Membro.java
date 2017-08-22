@@ -3,6 +3,9 @@ package com.algaworks.model;
 import java.io.Serializable;
 import java.util.Date;
 
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+
 public class Membro implements Serializable{
 
 	private static final long serialVersionUID = 1L;
@@ -17,8 +20,8 @@ public class Membro implements Serializable{
 		private String telefone;
 		private String celular;
 		private Date dataNascimento;
-		private Endereco endereco;
 		private String observacoes;
+		private Endereco endereco;
 		
 		
 		public Long getId() {
